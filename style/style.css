@@ -294,5 +294,60 @@ label .fa-times{
   width: 20%;
 }
 
+.about .row .box .block {
+  padding: 0rem 2rem;
+  margin: 1rem 0rem 2rem 0rem;
+  border-left: .2rem solid var(--main-clr);
+  position: relative;
+}
+
+.about .row .box .block::before {
+  position: absolute;
+  content: '';
+  width: 2rem;
+  height: 2rem;
+  background: var(--main-clr);
+  border-radius: 50%;
+  top: 0;
+  left: -1.1rem;
+}
+
+.about .row .box .block h3 {
+  color: var(--main-clr);
+  font-size: var(--medium-size);
+}
+
+.about .row .box .block p {
+  font-size: var(--small-size);
+}
+
+.about .download-box {
+  background: var(--secondary-bg-clr);
+  margin: 1.5rem 0rem;
+  padding: 2rem;
+  text-align: center;
+  border-radius: 0.5rem;
+  box-shadow: var(--box-shadow);
+}
 
 /* about me section end */
+
+ /* services section start */
+
+.services .box-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.services .box-container .box {
+  background: var(--secondary-bg-clr);
+  box-shadow: var(--box-shadow);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  flex: 1 1 35rem;
+}
+
+ /* services section end  */
