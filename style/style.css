@@ -348,6 +348,147 @@ label .fa-times{
   border-radius: 0.5rem;
   padding: 1.5rem;
   flex: 1 1 35rem;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
 }
 
+.services .box-container .box img {
+  width: 7rem;
+  height: 7rem;
+  margin: 1rem;
+}
+
+.services .box-container .box .number {
+  position: absolute;
+  top: 1.5rem;
+  left: 2rem;
+  font-size: 2.5rem;
+  color: var(--primary-text-clr);
+}
+
+.services .box-container .box h3 {
+  font-size: 2rem;
+  color: var(--main-clr);
+}
+
+.services .box-container .box p {
+  font-size: 1.6rem;
+  color: var(--primary-text-clr);
+  text-align: justify;
+  padding: 1rem;
+}
+
+.services .box-container .box::before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--main-clr);
+  z-index: -1;
+  opacity: .3;
+  transition: 0.3s;
+  clip-path: circle(25% at 0 0);
+}
+
+.services .box-container .box:hover::before {
+  clip-path: circle(100%);
+}
  /* services section end  */
+
+/* projects section start */
+
+.projects .box-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.projects .box-container .box {
+  flex: 1 1 35rem;
+  height: 27rem;
+  border: .2rem solid var(--main-clr);
+  box-shadow: var(--box-shadow);
+  position: relative;
+  cursor: pointer;
+}
+
+.projects .box-container .box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.projects .box-container .box .overlay{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  background: rgba(0,0,0,.8);
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.projects .box-container .box:hover .overlay{
+  opacity: 1;
+}
+
+/* projects section end */
+
+/* contact me section start */
+
+.contact .row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.contact .row form {
+  flex: 1 1 40rem;
+  background: var(--secondary-bg-clr);
+  box-shadow: var(--box-shadow);
+  border-radius: 0.5rem;
+  padding: 2rem;
+}
+
+.contact .row .map {
+  flex: 1 1 40rem;
+  background: var(--secondary-bg-clr);
+  box-shadow: var(--box-shadow);
+  border-radius: 0.5rem;
+  border: 2rem solid var(--secondary-bg-clr);
+}
+
+.contact .row .map iframe{
+  width: 100%;
+  height: 100%;
+}
+
+.contact .row form .input-box{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+}
+
+.contact .row form input,
+.contact .row form textarea {
+  width: 100%;
+  padding: 1rem 0rem;
+  margin: 1rem 0rem;
+  font-size: 1.6rem;
+  border-bottom: 1rem solid var(--secondary-text-clr);
+  text-transform: none;
+  background: none;
+  color: var(--main-clr);
+}
+/* contact me section end */
