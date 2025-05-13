@@ -486,9 +486,57 @@ label .fa-times{
   padding: 1rem 0rem;
   margin: 1rem 0rem;
   font-size: 1.6rem;
-  border-bottom: 1rem solid var(--secondary-text-clr);
+  border-bottom: .1rem solid var(--secondary-text-clr);
   text-transform: none;
   background: none;
   color: var(--main-clr);
 }
+
+.contact .row form input:focus,
+.contact .row form textarea:focus {
+  border-bottom: .3rem solid var(--main-clr);
+}
+
+.contact .row form .btn {
+  background: transparent;
+}
+
+.contact .row form .btn:hover {
+  background: var(--main-clr);
+}
+
+.social-media {
+  margin-top:  7rem;
+  text-align: center;
+  background-color: var(--secondary-bg-clr);
+  padding: 2rem;
+  border-radius: 0.5rem;
+}
+
+.social-media .social-links i {
+  font-size:  2rem;
+  margin:  0rem 1rem;
+  cursor: pointer;
+  color: var(--primary-text-clr);
+  transition:  0.3s;
+}
+
+.social-media .social-links .fa-telegram:hover {
+  color: #0088cc;
+  transform: scale(1.2);
+}
+.social-media .social-links .fa-whatsapp:hover {
+  color: #075e54;
+  transform: scale(1.2);
+}
+.social-media .social-links .fa-linkedin:hover {
+  color: #0a66c2;
+  transform: scale(1.2);
+}
+
+.social-media .social-links .fa-github:hover {
+  color: #4078c0;
+  transform: scale(1.2);
+}
+
 /* contact me section end */
