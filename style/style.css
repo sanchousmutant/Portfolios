@@ -11,7 +11,7 @@
  }
 
 :root{
-  --main-clr: springgreen;
+  --main-clr: #00ff7f;
   --primary-bg-clr: #0d1117;
   --secondary-bg-clr: #222;
   --primary-text-clr: #fff;
@@ -199,7 +199,7 @@ label .fa-times{
   color: var(--primary-text-clr);
   text-shadow: 0 -0.1rem 0.4rem white,
   0 -0.2rem 1rem yellow,
-  0 -1rem 2rem orange,
+  0 -1rem 2rem #ffa500,
   0 -1.8rem 4rem red;
 }
 
