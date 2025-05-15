@@ -14,251 +14,252 @@
 </head>
 
 <body>
+     <!-- AOS JS -->
+     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+     <!-- Custom JS -->
+     <script src="js/main.js"></script>
+     
+    <!-- header section start -->
+        <header>
 
-<!-- header section start -->
-    <header>
+            <input type="checkbox" id="menu">
+            <label for="menu">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-times"></i>
+            </label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#home">Начало</a></li>
+                    <li><a href="#about">Обо мне</a></li>
+                    <li><a href="#projects">Проекты</a></li>
+                    <li><a href="#contact">Контакты</a></li>
+                </ul>
+            </nav>
 
-        <input type="checkbox" id="menu">
-        <label for="menu">
-            <i class="fas fa-bars"></i>
-            <i class="fas fa-times"></i>
-        </label>
-        <nav class="navbar">
-            <ul>
-                <li><a href="#home">Начало</a></li>
-                <li><a href="#about">Обо мне</a></li>
-                <li><a href="#projects">Проекты</a></li>
-                <li><a href="#contact">Контакты</a></li>
-            </ul>
-        </nav>
+        </header>
+    <!-- header section end -->
 
-     </header>
-<!-- header section end -->
+    <!-- home section start -->
 
-<!-- home section start -->
+        <section id="home" class="home">
 
-    <section id="home" class="home">
+            <div class="img" data-aos="fade-right">
+                <img src="img/photo.png" alt="my photo">
+            </div>
 
-        <div class="img" data-aos="fade-right">
-            <img src="img/photo.png" alt="my photo">
+            <div class="content" data-aos="fade-left">
+                <h2>Привет !</h2>
+                <h3>Я <span>Никитин Александр</span></h3>
+                <p>начинающий Java-разработчик, полный энтузиазма и стремления создавать надежные и эффективные бэкенд-решения. Мой интерес к программированию, и в частности к Java, возник из желания строить сложную логику серверных приложений, работать с большими системами, решать интересные алгоритмические задачи.</p>
+                <a href="#about" class="btn">обо мне</a>
+                <a href="#" class="btn">скачать CV</a>
+            </div>
+
+        </section>
+
+    <!-- home section end -->
+
+    <!-- about section start -->
+
+        <section id="about" class="about">
+
+            <h3 class="heading" data-aos="fade-up">Обо <span>мне</span></h3>
+
+            <div class="row">
+
+                <div class="box" data-aos="fade-right" data-aos-delay="0">
+                    <h4 class="title">Навыки</h4>
+                    <div class="progress">
+                        <h4>JAVA <span>10%</span></h4>
+                        <div class="bar"><span></span></div>
+                    </div>
+                    <div class="progress">
+                        <h4>GIT<span>10%</span></h4>
+                        <div class="bar"><span></span></div>
+                        </div>
+                    <div class="progress">
+                        <h4>BASH<span>10%</span></h4>
+                        <div class="bar"><span></span></div>
+                    </div>
+                </div>
+
+                <div class="box" data-aos="fade-right" data-aos-delay="200">
+                    <!-- <h4 class="title">professional scills</h4> -->
+                    <div class="progress">
+                        <h4>MYSQL<span>10%</span></h4>
+                        <div class="bar"><span></span></div>
+                    </div>
+                    <div class="progress">
+                        <h4>DOCKER<span>10%</span></h4>
+                        <div class="bar"><span></span></div>
+                    </div>
+                    <div class="progress">
+                        <h4>HTML<span>10%</span></h4>
+                        <div class="bar"><span></span></div>
+                    </div>
+                    <div class="progress">
+                        <h4>CSS<span>10%</span></h4>
+                        <div class="bar"><span></span></div>
+                    </div>
+                </div>
+
+                <div class="box" data-aos="fade-left" data-aos-delay="0">
+                    <h4 class="title">Опыт</h4>
+                    <div class="block">
+                        <h3>Java</h3>
+                        <p>Я активно работаю над небольшими учебными проектами для закрепления полученных знаний. Например, <a href="https://github.com/sanchousmutant/home_work_GB/tree/main/Java%20%D0%9E%D0%B1%D1%8A%D0%B5%D0%BA%D1%82%D0%BD%D0%BE-%D0%BE%D1%80%D0%B8%D0%B5%D0%BD%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%BD%D0%BE%D0%B5%20%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5/7.%20%D0%9E%D0%9E%D0%9F%20%D0%94%D0%B8%D0%B7%D0%B0%D0%B9%D0%BD%20%D0%B8%20Solid%20%D1%87.2">консольное приложение</a> или <a href="https://github.com/sanchousmutant/WiFiManager">мобильные приложения</a> </p>
+                    </div>
+                    <div class="block">
+                        <h3>Git</h3>
+                        <p>Знаком с Git и GitHub для контроля версий. Использую VS Code, IntelliJ IDEA для разработки</p>
+                    </div>
+                    <div class="block">
+                        <h3>MySQL</h3>
+                        <p>Понимаю основы SQL и работал с MySQL</p>
+                    </div>
+                    <div class="block">
+                        <h3>Docker</h3>
+                        <p>Имею начальное представление о Docker и его роли в контейнеризации приложений</p>
+                    </div>
+                </div>
+
+                <div class="box" data-aos="fade-left" data-aos-delay="200">
+                    <h4 class="title">Образование</h4>
+                    <div class="block">
+                        <h3>GeekBrains</h3>
+                        <p>На образовательной платформе gb.ru я получил свои фундаментальные знания</p>
+                    </div>
+                    <div class="block">
+                        <h3>JavaRush</h3>
+                        <p>Чтобы закрепить эти знания и наработать практические навыки, я активно занимался на платформе javarush.com, где прорешал множество задач, что помогло мне глубже понять тонкости языка и научиться применять теорию на практике.</p>
+                    </div>
+                    <div class="block">
+                        <h3>Университет</h3>
+                        <p>НГПУ Факультет математики и информатики</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="download-box">
+                                    <a href="#" class="btn">Скачать CV</a>
+                        </div>
+
+        </section>
+
+    <!-- about section end -->
+
+
+    <!-- projects section start -->
+    <section id="projects" class="projects">
+
+        <h3 class="heading" data-aos="fade-up">Мои <span>проекты</span></h3>
+
+        <div class="box-container">
+            <div class="box" data-aos="zoom-in" data-aos-delay="0">
+                <div class="overlay">
+                    <a href="https://github.com/sanchousmutant/SwitchWiFiBt " target="_blank" class="btn">GitHub</a>
+                    <a href="#" class="btn video-btn" data-video="video/виджет.mp4">Смотреть видео</a>
+
+                </div>
+                <img src="img/p1.png" alt="scr1">
+            </div>
+
+            <div class="box" data-aos="zoom-in" data-aos-delay="200">
+                <div class="overlay">
+                    <a href="https://github.com/sanchousmutant/Portfolios" target="_blank" class="btn">GitHub</a>
+                </div>
+                <img src="img/p2.png" alt="scr2">
+            </div>
+
+    <!-- Modal for video start-->
+
+            <div class="modal" id="videoModal">
+                <div class="modal-content">
+                    <button class="close-modal">&times;</button>
+                    <video controls>
+                        <source src="" type="video/mp4">
+                        Ваш браузер не поддерживает видео.
+                    </video>
+                </div>
+            </div>
+
+            <!-- AOS JS -->
+            <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+            <!-- Custom JS -->
+            <script src="js/main.js"></script>
+
+    <!-- Modal for video start end-->
+
+            <!-- <div class="box" data-aos="zoom-in" data-aos-delay="0">
+                <div class="overlay">
+                    <a href="#" class="btn video-btn" data-video="video/виджет.mp4">Смотреть видео</a>
+                </div>
+                <img src="img/p1.png" alt="scr1">
+            </div> -->
+
+            <!-- <div class="box" data-aos="zoom-in" data-aos-delay="400">
+                <div class="overlay">
+                    <a href="" class="btn">Whatch video</a>
+                </div>
+                <img src="img/p3.png" alt="scr1">
+            </div>
+            <div class="box" data-aos="zoom-in" data-aos-delay="200">
+                <div class="overlay">
+                    <a href="" class="btn">Whatch video</a>
+                </div>
+                <img src="img/p5.png" alt="scr1">
+            </div>
+            <div class="box" data-aos="zoom-in" data-aos-delay="400">
+                <div class="overlay">
+                    <a href="" class="btn">Whatch video</a>
+                </div>
+                <img src="img/p6.png" alt="scr1">
+            </div> -->
         </div>
-
-        <div class="content" data-aos="fade-left">
-            <h2>Привет !</h2>
-            <h3>Я <span>Никитин Александр</span></h3>
-            <p>начинающий Java-разработчик, полный энтузиазма и стремления создавать надежные и эффективные бэкенд-решения. Мой интерес к программированию, и в частности к Java, возник из желания строить сложную логику серверных приложений, работать с большими системами, решать интересные алгоритмические задачи.</p>
-            <a href="#about" class="btn">обо мне</a>
-            <a href="#" class="btn">скачать CV</a>
-        </div>
-
     </section>
+    <!-- projects section end -->
 
-<!-- home section end -->
+    <!-- contact me section start -->
 
-<!-- about section start -->
+    <section id="contact" class="contact">
 
-    <section id="about" class="about">
-
-        <h3 class="heading" data-aos="fade-up">Обо <span>мне</span></h3>
+        <h3 class="heading" data-aos="fade-up"><span>Мои</span> контакты</h3>
 
         <div class="row">
 
-            <div class="box" data-aos="fade-right" data-aos-delay="0">
-                <h4 class="title">Навыки</h4>
-                <div class="progress">
-                    <h4>JAVA <span>10%</span></h4>
-                    <div class="bar"><span></span></div>
-                </div>
-                <div class="progress">
-                    <h4>GIT<span>10%</span></h4>
-                    <div class="bar"><span></span></div>
-                    </div>
-                <div class="progress">
-                    <h4>BASH<span>10%</span></h4>
-                    <div class="bar"><span></span></div>
-                </div>
-            </div>
+            <form action="https://formspree.io/f/xwpowlez" method="POST" data-aos="fade-right">
 
-            <div class="box" data-aos="fade-right" data-aos-delay="200">
-                <!-- <h4 class="title">professional scills</h4> -->
-                <div class="progress">
-                    <h4>MYSQL<span>10%</span></h4>
-                    <div class="bar"><span></span></div>
+                <div class="input-box">
+                    <!-- <input type="text" placeholder="name" autocomplete="off"> -->
+                    <input type="email" name="email" placeholder="email" autocomplete="off">
                 </div>
-                <div class="progress">
-                    <h4>DOCKER<span>10%</span></h4>
-                    <div class="bar"><span></span></div>
-                </div>
-                <div class="progress">
-                    <h4>HTML<span>10%</span></h4>
-                    <div class="bar"><span></span></div>
-                </div>
-                <div class="progress">
-                    <h4>CSS<span>10%</span></h4>
-                    <div class="bar"><span></span></div>
-                </div>
-            </div>
+                <textarea name="message" cols="30" rows="10" placeholder="message"></textarea>
+                <button class="btn" type="submit">send message</button>
 
-            <div class="box" data-aos="fade-left" data-aos-delay="0">
-                <h4 class="title">Опыт</h4>
-                <div class="block">
-                    <h3>Java</h3>
-                    <p>Я активно работаю над небольшими учебными проектами для закрепления полученных знаний. Например, <a href="https://github.com/sanchousmutant/home_work_GB/tree/main/Java%20%D0%9E%D0%B1%D1%8A%D0%B5%D0%BA%D1%82%D0%BD%D0%BE-%D0%BE%D1%80%D0%B8%D0%B5%D0%BD%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%BD%D0%BE%D0%B5%20%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5/7.%20%D0%9E%D0%9E%D0%9F%20%D0%94%D0%B8%D0%B7%D0%B0%D0%B9%D0%BD%20%D0%B8%20Solid%20%D1%87.2">консольное приложение</a> или <a href="https://github.com/sanchousmutant/WiFiManager">мобильные приложения</a> </p>
-                </div>
-                <div class="block">
-                    <h3>Git</h3>
-                    <p>Знаком с Git и GitHub для контроля версий. Использую VS Code, IntelliJ IDEA для разработки</p>
-                </div>
-                <div class="block">
-                    <h3>MySQL</h3>
-                    <p>Понимаю основы SQL и работал с MySQL</p>
-                </div>
-                <div class="block">
-                    <h3>Docker</h3>
-                    <p>Имею начальное представление о Docker и его роли в контейнеризации приложений</p>
-                </div>
-            </div>
+            </form>
 
-            <div class="box" data-aos="fade-left" data-aos-delay="200">
-                <h4 class="title">Образование</h4>
-                <div class="block">
-                    <h3>GeekBrains</h3>
-                    <p>На образовательной платформе gb.ru я получил свои фундаментальные знания</p>
-                </div>
-                <div class="block">
-                    <h3>JavaRush</h3>
-                    <p>Чтобы закрепить эти знания и наработать практические навыки, я активно занимался на платформе javarush.com, где прорешал множество задач, что помогло мне глубже понять тонкости языка и научиться применять теорию на практике.</p>
-                </div>
-                <div class="block">
-                    <h3>Университет</h3>
-                    <p>НГПУ Факультет математики и информатики</p>
-                </div>
+            <div class="map" data-aos="fade-left">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d293143.1639460707!2d82.61978078441281!3d54.96992551530449!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x42dfe5e190cc4d97%3A0x9b3a0673e1d3e985!2z0J3QvtCy0L7RgdC40LHQuNGA0YHQuiwg0J3QvtCy0L7RgdC40LHQuNGA0YHQutCw0Y8g0L7QsdC7Lg!5e0!3m2!1sru!2sru!4v1747030683648!5m2!1sru!2sru"></iframe>
+
             </div>
 
         </div>
 
-        <div class="download-box">
-                                <a href="#" class="btn">Скачать CV</a>
-                    </div>
+        <div class="social-media" data-aos="fade-up">
+                <div class="social-links">
+                    <a href="https://t.me/sanchomutant" target="_blank"><i class="fa-brands fa-telegram"></i></a>
+                    <a href="https://wa.me/79994502924" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                    <!-- <i class="fa-brands fa-linkedin"></i> -->
+                    <a href="https://github.com/sanchousmutant" target="_blank"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
 
     </section>
 
-<!-- about section end -->
 
+    <!-- contact me section end -->
 
-<!-- projects section start -->
- <section id="projects" class="projects">
-
-    <h3 class="heading" data-aos="fade-up">Мои <span>проекты</span></h3>
-
-    <div class="box-container">
-        <div class="box" data-aos="zoom-in" data-aos-delay="0">
-            <div class="overlay">
-                <a href="https://github.com/sanchousmutant/SwitchWiFiBt " target="_blank" class="btn">GitHub</a>
-                <a href="#" class="btn video-btn" data-video="video/виджет.mp4">Смотреть видео</a>
-
-            </div>
-            <img src="img/p1.png" alt="scr1">
-        </div>
-
-        <div class="box" data-aos="zoom-in" data-aos-delay="200">
-            <div class="overlay">
-                <a href="https://github.com/sanchousmutant/Portfolios" target="_blank" class="btn">GitHub</a>
-            </div>
-            <img src="img/p2.png" alt="scr1">
-        </div>
-
-<!-- Modal for video start-->
-
-        <div class="modal" id="videoModal">
-            <div class="modal-content">
-                <button class="close-modal">&times;</button>
-                <video controls>
-                    <source src="" type="video/mp4">
-                    Ваш браузер не поддерживает видео.
-                </video>
-            </div>
-        </div>
-
-        <!-- AOS JS -->
-        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-        <!-- Custom JS -->
-        <script src="js/main.js"></script>
-
-<!-- Modal for video start end-->
-
-        <!-- <div class="box" data-aos="zoom-in" data-aos-delay="0">
-            <div class="overlay">
-                <a href="#" class="btn video-btn" data-video="video/виджет.mp4">Смотреть видео</a>
-            </div>
-            <img src="img/p1.png" alt="scr1">
-        </div> -->
-
-        <!-- <div class="box" data-aos="zoom-in" data-aos-delay="400">
-            <div class="overlay">
-                <a href="" class="btn">Whatch video</a>
-            </div>
-            <img src="img/p3.png" alt="scr1">
-        </div>
-        
-        <div class="box" data-aos="zoom-in" data-aos-delay="200">
-            <div class="overlay">
-                <a href="" class="btn">Whatch video</a>
-            </div>
-            <img src="img/p5.png" alt="scr1">
-        </div>
-        <div class="box" data-aos="zoom-in" data-aos-delay="400">
-            <div class="overlay">
-                <a href="" class="btn">Whatch video</a>
-            </div>
-            <img src="img/p6.png" alt="scr1">
-        </div> -->
-        
-    </div>
- </section>
-<!-- projects section end -->
-
-<!-- contact me section start -->
-
-<section id="contact" class="contact">
-
-    <h3 class="heading" data-aos="fade-up"><span>Мои</span> контакты</h3>
-
-    <div class="row">
-
-        <form action="https://formspree.io/f/xwpowlez" method="POST" data-aos="fade-right">
-
-            <div class="input-box">
-                <!-- <input type="text" placeholder="name" autocomplete="off"> -->
-                <input type="email" name="email" placeholder="email" autocomplete="off">
-            </div>
-            <textarea name="message" cols="30" rows="10" placeholder="message"></textarea>
-            <button class="btn" type="submit">send message</button>
-
-        </form>
-
-        <div class="map" data-aos="fade-left">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d293143.1639460707!2d82.61978078441281!3d54.96992551530449!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x42dfe5e190cc4d97%3A0x9b3a0673e1d3e985!2z0J3QvtCy0L7RgdC40LHQuNGA0YHQuiwg0J3QvtCy0L7RgdC40LHQuNGA0YHQutCw0Y8g0L7QsdC7Lg!5e0!3m2!1sru!2sru!4v1747030683648!5m2!1sru!2sru"></iframe>
-
-        </div>
-
-    </div>
-
-    <div class="social-media" data-aos="fade-up">
-            <div class="social-links">
-                <a href="https://t.me/sanchomutant"><i class="fa-brands fa-telegram"></i></a>
-                <a href="https://wa.me/79994502924"><i class="fa-brands fa-whatsapp"></i></a>
-                <!-- <i class="fa-brands fa-linkedin"></i> -->
-                <a href="https://github.com/sanchousmutant"><i class="fa-brands fa-github"></i></a>
-            </div>
-        </div>
-
-</section>
-
-
-<!-- contact me section end -->
-
-    
 
 </body>
 
