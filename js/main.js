@@ -1,12 +1,12 @@
 // Инициализация AOS с базовыми настройками
 document.addEventListener('DOMContentLoaded', () => {
     AOS.init({
-        duration: 800,          // базовая длительность анимации
-        offset: 100,           // отступ в пикселях от нижнего края окна
-        once: false,           // анимация будет повторяться
-        easing: 'ease',        // функция плавности
-        delay: 100,           // задержка перед началом
-        disable: 'mobile'      // отключить на мобильных устройствах
+        duration: 800,          
+        offset: 100,          
+        once: false,           
+        easing: 'ease',        
+        delay: 100,           
+        disable: 'mobile'      
     });
 });
 
