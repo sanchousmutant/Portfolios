@@ -42,11 +42,8 @@ body {
   --sb-size: 1rem;
   /* background-color: var(--primary-bg-clr);*/
   position: relative;
-  background-image: url("/img/background.jpg");
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
-  border-image: fill 0 linear-gradient(#0007, #000) ;
+  background: url(/img/background.jpg) no-repeat center/cover fixed;
+  border-image: fill 0 linear-gradient(90deg,#0009, #000) ;
 }
 
 body::-webkit-scrollbar {
