@@ -40,14 +40,14 @@ body {
   --sb-track-color: #222;
   --sb-thumb-color: var(--main-clr);
   --sb-size: 1rem;
-  /* background-color: var(--primary-bg-clr);*/
+  background-color: var(--primary-bg-clr);
   position: relative;
-  background-image: url("/img/background.jpg");
+  background-image: url("/img/bg.jpg");
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
-  border-image: fill 0 linear-gradient(90deg,#0009, #000) ;
+  border-image: fill 0 linear-gradient(#0009, #000) ;
 }
 
 body::-webkit-scrollbar {
