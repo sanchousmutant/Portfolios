@@ -42,7 +42,7 @@ body {
   --sb-size: 1rem;
   /* background-color: var(--primary-bg-clr);*/
   position: relative;
-  background: url(/img/background.jpg) no-repeat center/cover fixed;
+  background: url("img/background.jpg") no-repeat center/cover fixed;
   border-image: fill 0 linear-gradient(90deg,#0009, #000) ;
 }
 
