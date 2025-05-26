@@ -42,7 +42,7 @@ body {
   --sb-size: 1rem;
   background-color: var(--primary-bg-clr);
   position: relative;
-  background-image: url("img/bg.jpg");
+  background-image: url("/Portfolios/img/bg.jpg");
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
