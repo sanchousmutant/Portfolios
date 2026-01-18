@@ -132,10 +132,10 @@ class LiquidGlassTheme {
                 await this.loadScript('https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js');
             }
             if (!window.Container) {
-                await this.loadScript('liquid-glass-js-main/container.js');
+                await this.loadScript('js/liquid-glass-lib/container.js');
             }
             if (!window.Button) {
-                await this.loadScript('liquid-glass-js-main/button.js');
+                await this.loadScript('js/liquid-glass-lib/button.js');
             }
             this.scriptsLoaded = true;
         } catch (error) {
