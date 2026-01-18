@@ -8,15 +8,15 @@
   outline: 0;
   /* text-transform: capitalize; */
   font-family: 'Nunito', sans-serif;
- }
+}
 
-:root{
+:root {
   --main-clr: #00ff7f;
   --primary-bg-clr: #0d1117;
   --secondary-bg-clr: #222;
   --primary-text-clr: #fff;
   --secondary-text-clr: #eee;
-  --box-shadow: 0 .5rem 1rem rgba(0,0,0,.5);
+  --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .5);
   --big-size: calc(40px + (70 - 40) * ((100vw - 300px) / (1600 - 300)));
   --medium-size: calc(14px + (20 - 14) * ((100vw - 300px) / (1600 - 300)));
   --small-size: calc(12px + (15 - 12) * ((100vw - 300px) / (1600 - 300)));
@@ -26,8 +26,26 @@
 html {
   font-size: 62.5%;
   overflow-x: hidden;
-  scroll-behavior: smooth;
 }
+
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+
 
 img {
   max-width: 100%;
@@ -42,12 +60,12 @@ body {
   --sb-size: 1rem;
   background-color: var(--primary-bg-clr);
   position: relative;
-  background-image: url("/Portfolios/img/bg.jpg");
+  background-image: url("../img/bg.jpg");
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
-  border-image: fill 0 linear-gradient(#0009, #000) ;
+  border-image: fill 0 linear-gradient(#0009, #000);
 }
 
 body::-webkit-scrollbar {
@@ -74,7 +92,7 @@ section {
   padding: 8rem, 3rem;
   font-size: 2rem;
   color: var(--primary-text-clr);
-  border:  2px solid var(--primary-text-clr);
+  border: 2px solid var(--primary-text-clr);
   border-radius: 0.5rem;
   box-shadow: var(--box-shadow);
   margin: 1rem;
@@ -118,7 +136,7 @@ label {
   box-shadow: 0 0 10px var(--main-clr);
 }
 
-label .fa-times{
+label .fa-times {
   text-align: center;
   line-height: 5rem;
   display: none;
@@ -152,16 +170,16 @@ label .fa-times{
   transform: translateX(.8rem);
 }
 
-#menu:checked ~ .navbar {
+#menu:checked~.navbar {
   opacity: 1;
-  transform:  scale(1);
+  transform: scale(1);
 }
 
-#menu:checked ~ label .fa-bars {
+#menu:checked~label .fa-bars {
   display: none;
 }
 
-#menu:checked ~ label .fa-times {
+#menu:checked~label .fa-times {
   display: block;
 }
 
@@ -206,9 +224,9 @@ label .fa-times{
 .home .content h3 span {
   color: var(--primary-text-clr);
   text-shadow: 0 -0.1rem 0.4rem white,
-  0 -0.2rem 1rem yellow,
-  0 -1rem 2rem #ffa500,
-  0 -1.8rem 4rem red;
+    0 -0.2rem 1rem yellow,
+    0 -1rem 2rem #ffa500,
+    0 -1.8rem 4rem red;
 }
 
 .home .content p {
@@ -231,7 +249,7 @@ label .fa-times{
 }
 
 .about .row .box {
-  flex:  1 1 45rem;
+  flex: 1 1 45rem;
   box-shadow: var(--box-shadow);
   border-radius: 0.5rem;
   background: var(--secondary-bg-clr);
@@ -248,7 +266,7 @@ label .fa-times{
   padding: 1rem 0rem;
 }
 
-.about .row .box .progress h4{
+.about .row .box .progress h4 {
   font-size: var(--medium-size);
   color: var(--secondary-text-clr);
   display: flex;
@@ -343,8 +361,8 @@ label .fa-times{
 /* projects section start */
 
 .projects {
-    min-height: 60vh;
-    padding-top: 0;
+  min-height: 60vh;
+  padding-top: 0;
 }
 
 .projects .box-container {
@@ -370,7 +388,7 @@ label .fa-times{
   object-fit: cover;
 }
 
-.projects .box-container .box .overlay{
+.projects .box-container .box .overlay {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -378,12 +396,12 @@ label .fa-times{
   justify-content: center;
   align-items: center;
   z-index: 1;
-  background: rgba(0,0,0,.8);
+  background: rgba(0, 0, 0, .8);
   opacity: 0;
   transition: 0.3s;
 }
 
-.projects .box-container .box:hover .overlay{
+.projects .box-container .box:hover .overlay {
   opacity: 1;
 }
 
@@ -418,12 +436,12 @@ label .fa-times{
   border: 2rem solid var(--secondary-bg-clr);
 }
 
-.contact .row .map iframe{
+.contact .row .map iframe {
   width: 100%;
   height: 100%;
 }
 
-.contact .row form .input-box{
+.contact .row form .input-box {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -456,7 +474,7 @@ label .fa-times{
 }
 
 .social-media {
-  margin-top:  7rem;
+  margin-top: 7rem;
   text-align: center;
   background-color: var(--secondary-bg-clr);
   padding: 2rem;
@@ -464,21 +482,23 @@ label .fa-times{
 }
 
 .social-media .social-links i {
-  font-size:  2rem;
-  margin:  0rem 1rem;
+  font-size: 2rem;
+  margin: 0rem 1rem;
   cursor: pointer;
   color: var(--primary-text-clr);
-  transition:  0.3s;
+  transition: 0.3s;
 }
 
 .social-media .social-links .fa-telegram:hover {
   color: #0088cc;
   transform: scale(1.2);
 }
+
 .social-media .social-links .fa-whatsapp:hover {
   color: #075e54;
   transform: scale(1.2);
 }
+
 .social-media .social-links .fa-linkedin:hover {
   color: #0a66c2;
   transform: scale(1.2);
@@ -493,47 +513,48 @@ label .fa-times{
 
 /* Modal styles start*/
 .modal {
-    display: none;
-    position: fixed;
-    z-index: 1000;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.9);
-    justify-content: center;
-    align-items: center;
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  justify-content: center;
+  align-items: center;
 }
 
 .modal.active {
-    display: flex;
+  display: flex;
 }
 
 .modal-content {
-    position: relative;
-    width: 80%;
-    max-width: 800px;
+  position: relative;
+  width: 80%;
+  max-width: 800px;
 }
 
 .modal video {
-    width: 100%;
-    border-radius: 8px;
+  width: 100%;
+  border-radius: 8px;
 }
 
 .close-modal {
-    position: absolute;
-    top: -40px;
-    right: 0;
-    color: white;
-    font-size: 30px;
-    cursor: pointer;
-    background: none;
-    border: none;
-    padding: 5px;
-    transition: color 0.3s ease;
+  position: absolute;
+  top: -40px;
+  right: 0;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 5px;
+  transition: color 0.3s ease;
 }
 
 .close-modal:hover {
-    color: #ddd;
+  color: #ddd;
 }
+
 /* Modal styles end*/
