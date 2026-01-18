@@ -14,6 +14,8 @@
     <!-- Liquid Glass CSS -->
     <link rel="stylesheet" href="liquid-glass-js-main/glass.css">
     <link rel="stylesheet" href="style/liquid-glass-override.css">
+    <!-- cat CSS -->
+    <link rel="stylesheet" href="style/cat.css">
     <!-- favicon link -->
     <link rel="icon" type="image/png" href="img/ico.png">
     <!-- AOS JS -->
@@ -261,7 +263,75 @@
 
     <!-- contact me section end -->
 
+    <!-- cat start -->
 
+    <div id="cat-container">
+        <div id="cat-speech">Мяу!</div>
+        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <!-- Группа хвоста с полосками -->
+            <g id="cat-tail-group" class="cat-part tail-wag">
+                <path id="cat-tail" d="M40 110 Q 10 70 40 40 Q 50 30 50 50 Q 50 80 40 110" fill="#7d7d7d" stroke="#333" stroke-width="2"/>
+                <!-- Полоски на хвосте -->
+                <path class="stripe" d="M25 75 Q 20 70 28 65" fill="none" stroke="#5a5a5a" stroke-width="3"/>
+                <path class="stripe" d="M35 55 Q 30 50 38 45" fill="none" stroke="#5a5a5a" stroke-width="3"/>
+            </g>
+            
+            <!-- Задние лапы -->
+            <ellipse cx="60" cy="150" rx="15" ry="10" fill="#9e9e9e" stroke="#333" />
+            <ellipse cx="140" cy="150" rx="15" ry="10" fill="#9e9e9e" stroke="#333" />
+    
+            <!-- Туловище с полосками -->
+            <g>
+                <path id="cat-body" class="cat-part" d="M50 140 Q 50 70 100 70 Q 150 70 150 140 L 140 160 L 60 160 Z" fill="#9e9e9e" stroke="#333" stroke-width="2"/>
+                <!-- Полоски на боках -->
+                <path class="stripe" d="M55 100 Q 65 100 65 115" fill="none" stroke="#5a5a5a" stroke-width="4"/>
+                <path class="stripe" d="M55 125 Q 70 125 70 140" fill="none" stroke="#5a5a5a" stroke-width="4"/>
+                <path class="stripe" d="M145 100 Q 135 100 135 115" fill="none" stroke="#5a5a5a" stroke-width="4"/>
+                <path class="stripe" d="M145 125 Q 130 125 130 140" fill="none" stroke="#5a5a5a" stroke-width="4"/>
+            </g>
+            
+            <!-- Передние лапы -->
+            <rect x="75" y="145" width="15" height="25" rx="7" fill="#bdbdbd" stroke="#333" />
+            <rect x="110" y="145" width="15" height="25" rx="7" fill="#bdbdbd" stroke="#333" />
+    
+            <!-- Голова -->
+            <g id="cat-head" class="cat-part">
+                <!-- Уши -->
+                <path class="ear" d="M70 55 L 50 20 L 90 45 Z" fill="#7d7d7d" stroke="#333" />
+                <path class="ear" d="M130 55 L 150 20 L 110 45 Z" fill="#7d7d7d" stroke="#333" />
+                
+                <!-- Мордочка -->
+                <circle cx="100" cy="70" r="45" fill="#9e9e9e" stroke="#333" stroke-width="2"/>
+                
+                <!-- Полоски на лбу -->
+                <path class="stripe" d="M95 35 L 95 45" fill="none" stroke="#5a5a5a" stroke-width="2"/>
+                <path class="stripe" d="M100 32 L 100 45" fill="none" stroke="#5a5a5a" stroke-width="2"/>
+                <path class="stripe" d="M105 35 L 105 45" fill="none" stroke="#5a5a5a" stroke-width="2"/>
+    
+                <!-- Глаза -->
+                <circle cx="85" cy="65" r="8" fill="white" stroke="#333" />
+                <circle cx="115" cy="65" r="8" fill="white" stroke="#333" />
+                <circle id="eye-l" cx="85" cy="65" r="4" fill="black" />
+                <circle id="eye-r" cx="115" cy="65" r="4" fill="black" />
+    
+                <!-- Нос -->
+                <path d="M95 80 L 105 80 L 100 85 Z" fill="#ff8a80" stroke="#333" />
+                
+                <!-- РОТ -->
+                <path id="cat-mouth" d="M90 90 Q 95 95 100 90 Q 105 95 110 90" fill="none" stroke="#333" stroke-width="1.5" stroke-linecap="round"/>
+    
+                <!-- Усы -->
+                <line x1="75" y1="85" x2="45" y2="80" stroke="#333" />
+                <line x1="75" y1="90" x2="45" y2="95" stroke="#333" />
+                <line x1="125" y1="85" x2="155" y2="80" stroke="#333" />
+                <line x1="125" y1="90" x2="155" y2="95" stroke="#333" />
+            </g>
+        </svg>
+    </div>
+    <!-- cat end -->
+
+    <!-- cat js -->
+    <script src="js/cat.js" defer></script>
 
 </body>
 

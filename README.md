@@ -68,7 +68,6 @@ git clone https://github.com/sanchousmutant/Portfolios.git
 ## 📞 Контакты
 
 - Telegram: [@sanchomutant](https://t.me/sanchomutant)
-- WhatsApp: [+7(999)450-29-24](https://wa.me/79994502924)
 - GitHub: [sanchousmutant](https://github.com/sanchousmutant)
 
 ## 📄 Лицензия
