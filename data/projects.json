@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "title": "Project 1",
+        "image": "img/1771769529_photo_2026-02-22_21-10-49.jpg",
+        "video": "",
+        "github": "https://github.com/sanchousmutant/PowerUp",
+        "created_at": "2026-02-22 09:12:09"
+    },
+    {
+        "id": 2,
+        "title": "Project 2",
+        "image": "img/1771769997_photo_2026-02-22_21-18-48.jpg",
+        "video": "",
+        "github": "https://github.com/sanchousmutant/Troika",
+        "created_at": "2026-02-22 09:19:57"
+    },
+    {
+        "id": 3,
+        "title": "Project 3",
+        "image": "img/1771824539_p5.png",
+        "video": "",
+        "github": "https://github.com/sanchousmutant/Silero-TTS-Studio",
+        "created_at": "2026-02-23 00:28:59"
+    }
+]

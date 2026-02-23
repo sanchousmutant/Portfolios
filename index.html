@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolios</title>
+    <title>Sancho’s Lab</title>
     <!-- font-awesome link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <!-- AOS CSS -->
@@ -13,6 +13,11 @@
     <link rel="stylesheet" href="style/style.css">
     <!-- favicon link -->
     <link rel="icon" type="image/png" href="img/ico.png">
+    <!-- Liquid Glass CSS -->  
+    <link rel="stylesheet" href="style/liquid-glass-lib/glass.css"> 
+    <link rel="stylesheet" href="style/liquid-glass-override.css">
+    <!-- cat CSS -->
+    <link rel="stylesheet" href="style/cat.css">
     <!-- AOS JS -->
     <script src="https://unpkg.com/aos@next/dist/aos.js" defer></script>
     <!-- Lenis JS -->
@@ -22,7 +27,11 @@
 </head>
 
 <body>
-
+	<!-- Checkbox для переключения Liquid Glass темы -->
+    <input type="checkbox" id="glass-theme-toggle" class="theme-toggle-checkbox" style="display: none;">
+    <label for="glass-theme-toggle" class="theme-toggle-label">
+    	<span class="toggle-icon">🔮</span>
+    </label>
     <!-- header section start -->
     <header>
 
@@ -52,14 +61,13 @@
 
         <div class="content" data-aos="fade-left">
             <h2>Привет !</h2>
-            <h3>Я <span>Никитин Александр</span></h3>
-            <p>начинающий Java-разработчик, полный энтузиазма и стремления создавать надежные и эффективные
-                бэкенд-решения. Мой интерес к программированию, и в частности к Java, возник из желания строить сложную
-                логику серверных приложений, работать с большими системами, решать интересные алгоритмические задачи.
+            <h3> <span>👋 Я Саша (sanchousmutant)</span></h3>
+            <p>Вайбкодер и творческий человек, который любит пилить всякие полезные (и не очень) утилитарные приложения.  
+				Делаю то, что интересно именно мне: маленькие инструменты, эксперименты, быстрые прототипы.
             </p>
             <a href="#about" class="btn">обо мне</a>
-            <a href="/pdf/Aleksandr_Anatolevich_Nikitin.pdf" download="Aleksandr_Anatolevich_Nikitin.pdf"
-                class="btn">скачать CV</a>
+         <!--    <a href="/pdf/Aleksandr_Anatolevich_Nikitin.pdf" download="Aleksandr_Anatolevich_Nikitin.pdf"
+                class="btn">скачать CV</a>-->
         </div>
 
     </section>
@@ -114,11 +122,9 @@
                 <h4 class="title">Опыт</h4>
                 <div class="block">
                     <h3>Java</h3>
-                    <p>Я активно работаю над небольшими учебными проектами для закрепления полученных знаний. Например,
-                        <a href="https://github.com/sanchousmutant/home_work_GB/tree/main/Java%20%D0%9E%D0%B1%D1%8A%D0%B5%D0%BA%D1%82%D0%BD%D0%BE-%D0%BE%D1%80%D0%B8%D0%B5%D0%BD%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%BD%D0%BE%D0%B5%20%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5/7.%20%D0%9E%D0%9E%D0%9F%20%D0%94%D0%B8%D0%B7%D0%B0%D0%B9%D0%BD%20%D0%B8%20Solid%20%D1%87.2"
-                            target="_blank">консольное приложение</a> или <a
-                            href="https://github.com/sanchousmutant/SwitchWiFiBt.git" target="_blank">мобильные
-                            приложения</a>
+                    <p>Я активно работаю над небольшими проектами. Например,
+                        <a href="https://github.com/sanchousmutant/SwitchWiFiBt-main"
+                            target="_blank">виджет настройки</a>
                     </p>
                 </div>
                 <div class="block">
@@ -127,7 +133,7 @@
                 </div>
                 <div class="block">
                     <h3>MySQL</h3>
-                    <p>Понимаю основы SQL и работал с MySQL</p>
+                    <p>Понимаю основы SQL</p>
                 </div>
                 <div class="block">
                     <h3>Docker</h3>
@@ -155,11 +161,11 @@
 
         </div>
 
-        <div class="download-box">
+     <!--   <div class="download-box">
             <a href="/pdf/Aleksandr_Anatolevich_Nikitin.pdf" download="Aleksandr_Anatolevich_Nikitin.pdf"
                 class="btn">Скачать CV</a>
         </div>
-
+	-->
     </section>
 
     <!-- about section end -->
@@ -185,7 +191,12 @@
                 </div>
                 <img src="img/p2.png" alt="scr2">
             </div>
-
+			<div class="box" data-aos="zoom-in" data-aos-delay="200">
+                <div class="overlay">
+                    <a href="https://sanchousmutant.github.io/Kitt-Cues/" target="_blank" class="btn">Играть</a>
+                </div>
+                <img src="img/p5_1.png" alt="scr2">
+            </div>
             <!-- Modal for video start-->
             <div class="modal" id="videoModal">
                 <div class="modal-content">
@@ -210,6 +221,26 @@
                 </div>
                 <img src="img/p4.PNG" alt="scr3">
             </div>
+			<!-- ADMIN-PROJECTS-START -->
+            <div class="box" data-aos="zoom-in" data-aos-delay="0">
+                <div class="overlay">
+                    <a href="https://github.com/sanchousmutant/PowerUp" target="_blank" class="btn">GitHub</a>
+                </div>
+                <img src="img/1771769529_photo_2026-02-22_21-10-49.jpg" alt="Project 1">
+            </div>
+            <div class="box" data-aos="zoom-in" data-aos-delay="0">
+                <div class="overlay">
+                    <a href="https://github.com/sanchousmutant/Troika" target="_blank" class="btn">GitHub</a>
+                </div>
+                <img src="img/1771769997_photo_2026-02-22_21-18-48.jpg" alt="Project 2">
+            </div>
+            <div class="box" data-aos="zoom-in" data-aos-delay="0">
+                <div class="overlay">
+                    <a href="https://github.com/sanchousmutant/Silero-TTS-Studio" target="_blank" class="btn">GitHub</a>
+                </div>
+                <img src="img/1771824539_p5.png" alt="Project 3">
+            </div>
+            <!-- ADMIN-PROJECTS-END -->
         </div>
 
     </section>
@@ -246,8 +277,11 @@
             <div class="social-links">
                 <a href="https://t.me/sanchomutant" target="_blank"><i class="fa-brands fa-telegram"></i></a>
                 <a href="https://wa.me/79994502924" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
-                <!-- <i class="fa-brands fa-linkedin"></i> -->
                 <a href="https://github.com/sanchousmutant" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href=" https://vkvideo.ru/@club235489377" target="_blank"><i class="fa-brands fa-vk"></i></a>
+                <a href="https://www.youtube.com/@sanchomutant" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                
+                 <!-- <i class="fa-brands fa-linkedin"></i> -->
             </div>
         </div>
 
@@ -256,8 +290,83 @@
 
     <!-- contact me section end -->
 
+ <!-- Зависимость html2canvas (с CDN) -->
+ <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+ <!-- Библиотека Liquid Glass -->
+ <script src="js/liquid-glass-lib/container.js"></script>
+ <script src="js/liquid-glass-lib/button.js"></script>
+ <!-- Главный скрипт темы -->
+ <script src="js/liquid-glass-theme.js"></script>  
+    
+  <!-- cat start -->
 
+    <div id="cat-container">
+        <div id="cat-speech">Мяу!</div>
+        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <!-- Группа хвоста с полосками -->
+            <g id="cat-tail-group" class="cat-part tail-wag">
+                <path id="cat-tail" d="M40 110 Q 10 70 40 40 Q 50 30 50 50 Q 50 80 40 110" fill="#7d7d7d" 						stroke="#333" stroke-width="2"/>
+                <!-- Полоски на хвосте -->
+                <path class="stripe" d="M25 75 Q 20 70 28 65" fill="none" stroke="#5a5a5a" stroke-width="3"/>
+                <path class="stripe" d="M35 55 Q 30 50 38 45" fill="none" stroke="#5a5a5a" stroke-width="3"/>
+            </g>
+            
+            <!-- Задние лапы -->
+            <ellipse cx="60" cy="150" rx="15" ry="10" fill="#9e9e9e" stroke="#333" />
+            <ellipse cx="140" cy="150" rx="15" ry="10" fill="#9e9e9e" stroke="#333" />
+    
+            <!-- Туловище с полосками -->
+            <g>
+                <path id="cat-body" class="cat-part" d="M50 140 Q 50 70 100 70 Q 150 70 150 140 L 140 160 L 60 					160 Z" fill="#9e9e9e" stroke="#333" stroke-width="2"/>
+                <!-- Полоски на боках -->
+                <path class="stripe" d="M55 100 Q 65 100 65 115" fill="none" stroke="#5a5a5a" stroke-width="4"/>
+                <path class="stripe" d="M55 125 Q 70 125 70 140" fill="none" stroke="#5a5a5a" stroke-width="4"/>
+                <path class="stripe" d="M145 100 Q 135 100 135 115" fill="none" stroke="#5a5a5a" stroke-						width="4"/>
+                <path class="stripe" d="M145 125 Q 130 125 130 140" fill="none" stroke="#5a5a5a" stroke-						width="4"/>
+            </g>
+            
+            <!-- Передние лапы -->
+            <rect x="75" y="145" width="15" height="25" rx="7" fill="#bdbdbd" stroke="#333" />
+            <rect x="110" y="145" width="15" height="25" rx="7" fill="#bdbdbd" stroke="#333" />
+    
+            <!-- Голова -->
+            <g id="cat-head" class="cat-part">
+                <!-- Уши -->
+                <path class="ear" d="M70 55 L 50 20 L 90 45 Z" fill="#7d7d7d" stroke="#333" />
+                <path class="ear" d="M130 55 L 150 20 L 110 45 Z" fill="#7d7d7d" stroke="#333" />
+                
+                <!-- Мордочка -->
+                <circle cx="100" cy="70" r="45" fill="#9e9e9e" stroke="#333" stroke-width="2"/>
+                
+                <!-- Полоски на лбу -->
+                <path class="stripe" d="M95 35 L 95 45" fill="none" stroke="#5a5a5a" stroke-width="2"/>
+                <path class="stripe" d="M100 32 L 100 45" fill="none" stroke="#5a5a5a" stroke-width="2"/>
+                <path class="stripe" d="M105 35 L 105 45" fill="none" stroke="#5a5a5a" stroke-width="2"/>
+    
+                <!-- Глаза -->
+                <circle cx="85" cy="65" r="8" fill="white" stroke="#333" />
+                <circle cx="115" cy="65" r="8" fill="white" stroke="#333" />
+                <circle id="eye-l" cx="85" cy="65" r="4" fill="black" />
+                <circle id="eye-r" cx="115" cy="65" r="4" fill="black" />
+    
+                <!-- Нос -->
+                <path d="M95 80 L 105 80 L 100 85 Z" fill="#ff8a80" stroke="#333" />
+                
+                <!-- РОТ -->
+                <path id="cat-mouth" d="M90 90 Q 95 95 100 90 Q 105 95 110 90" fill="none" stroke="#333" stroke-				width="1.5" stroke-linecap="round"/>
+    
+                <!-- Усы -->
+                <line x1="75" y1="85" x2="45" y2="80" stroke="#333" />
+                <line x1="75" y1="90" x2="45" y2="95" stroke="#333" />
+                <line x1="125" y1="85" x2="155" y2="80" stroke="#333" />
+                <line x1="125" y1="90" x2="155" y2="95" stroke="#333" />
+            </g>
+        </svg>
+    </div>
+    <!-- cat end -->
 
+    <!-- cat js -->
+    <script src="js/cat.js" defer></script> 
 </body>
 
 </html>

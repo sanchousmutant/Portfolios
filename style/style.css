@@ -509,6 +509,16 @@ label .fa-times {
   transform: scale(1.2);
 }
 
+.social-media .social-links .fa-youtube:hover {
+  color: #e31717;
+  transform: scale(1.2);
+}
+
+.social-media .social-links .fa-vk:hover {
+  color: #0e70b5;
+  transform: scale(1.2);
+}
+
 /* contact me section end */
 
 /* Modal styles start*/

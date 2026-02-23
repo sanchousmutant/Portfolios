@@ -1,0 +1,80 @@
+
+#cat-container {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    width: 150px;
+    height: 150px;
+    cursor: pointer;
+    transition: transform 0.3s ease, left 2s linear, bottom 2s linear;
+    z-index: 9999;
+    user-select: none;
+}
+
+#cat-speech {
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+    padding: 5px 12px;
+    border-radius: 15px;
+    border: 2px solid #333;
+    font-size: 14px;
+    font-weight: bold;
+    display: none;
+    white-space: nowrap;
+}
+
+#cat-speech::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #333 transparent transparent transparent;
+}
+
+.walking {
+    animation: bobbing 0.5s infinite alternate ease-in-out;
+}
+
+@keyframes bobbing {
+    from { transform: translateY(0); }
+    to { transform: translateY(-10px); }
+}
+
+.cat-part { transition: all 0.2s ease; }
+
+.ear:hover { transform: rotate(10deg); transform-origin: center; }
+
+.tail-wag {
+    animation: wag 1s infinite alternate ease-in-out;
+    transform-origin: 40px 110px;
+}
+
+@keyframes wag {
+    from { transform: rotate(-5deg); }
+    to { transform: rotate(15deg); }
+}
+
+@keyframes purr {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.02); }
+    100% { transform: scale(1); }
+}
+
+.purring {
+    animation: purr 0.3s infinite;
+}
+
+#cat-mouth {
+    transition: d 0.2s ease;
+}
+
+.stripe {
+    fill: #5a5a5a;
+    pointer-events: none;
+}
