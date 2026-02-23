@@ -6,7 +6,6 @@
 
 **Посмотреть сайт вживую можно здесь: [https://sanchousmutant.github.io/Portfolios/](https://sanchousmutant.github.io/Portfolios/)**
 
->>>>>>> 32b0696fe152acbe8b2b084906b2dd67ed800ee5
 ## 🛠 Технологии
 
 - HTML5
