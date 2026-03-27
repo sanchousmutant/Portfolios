@@ -1,26 +1,65 @@
 [
     {
         "id": 1,
-        "title": "Project 1",
+        "title": "PowerUp",
         "image": "img/1771769529_photo_2026-02-22_21-10-49.jpg",
         "video": "",
         "github": "https://github.com/sanchousmutant/PowerUp",
-        "created_at": "2026-02-22 09:12:09"
-    },
-    {
-        "id": 2,
-        "title": "Project 2",
-        "image": "img/1771769997_photo_2026-02-22_21-18-48.jpg",
-        "video": "",
-        "github": "https://github.com/sanchousmutant/Troika",
-        "created_at": "2026-02-22 09:19:57"
+        "created_at": "2026-02-22 09:12:09",
+        "description": "Мобильное приложение-таймер для домашних тренировок без инвентаря"
     },
     {
         "id": 3,
-        "title": "Project 3",
+        "title": "Silero TTS Studio",
         "image": "img/1771824539_p5.png",
         "video": "",
         "github": "https://github.com/sanchousmutant/Silero-TTS-Studio",
-        "created_at": "2026-02-23 00:28:59"
+        "created_at": "2026-02-23 00:28:59",
+        "description": "Локальный веб-интерфейс для синтеза русской речи на базе Silero TTS"
+    },
+    {
+        "id": 4,
+        "title": "SwitchWiFiBt",
+        "description": "Android-виджет для быстрого управления Wi-Fi и Bluetooth прямо с домашнего экрана",
+        "image": "img/p1.png",
+        "video": "video/виджет.mp4",
+        "github": "https://github.com/sanchousmutant/SwitchWiFiBt",
+        "created_at": "2026-03-27 06:44:09"
+    },
+    {
+        "id": 5,
+        "title": "SanchousLab",
+        "description": "Персональный сайт-портфолио",
+        "image": "img/p2.png",
+        "video": "",
+        "github": "https://github.com/sanchousmutant/Portfolios",
+        "created_at": "2026-03-27 06:44:09"
+    },
+    {
+        "id": 6,
+        "title": "Kitt-Cues - Бильярд с Кошками",
+        "description": "Уникальная браузерная игра, сочетающая классический бильярд с очаровательными анимированными кошками!",
+        "image": "img/p5_1.png",
+        "video": "",
+        "github": "https://sanchousmutant.github.io/Kitt-Cues/",
+        "created_at": "2026-03-27 06:44:09"
+    },
+    {
+        "id": 7,
+        "title": "OpenMediaVault",
+        "description": "Администрирование локального сервера",
+        "image": "img/p3.png",
+        "video": "video/openmedia.mp4",
+        "github": "",
+        "created_at": "2026-03-27 06:44:09"
+    },
+    {
+        "id": 8,
+        "title": "OpenWRT",
+        "description": "Администрирование роутера на базе OpenWRT",
+        "image": "img/p4.PNG",
+        "video": "video/openwrt.mp4",
+        "github": "",
+        "created_at": "2026-03-27 06:44:09"
     }
 ]
